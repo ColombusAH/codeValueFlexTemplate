@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+            width: 100h;
+            height: 100w;
+
+        }
+
+        div {
+            border: 3px solid;
+            width: 100%;
+            margin: 0.05em;
+            padding: 1em;
+
+        }
+
+        .flex_div {
+            display: flex;
+            flex-direction: column;
+            height: 1000px;
+
+        }
+
+        #left_content {
+            flex:1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+
+        #medium_content {
+            flex: 2;
+        }
+
+        #right_content {
+            flex: 1;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <head>
+        HEADER
+        <nav>
+            <ul>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+        </nav>
+    </head>
+
+    <main>
+        <div class="flex_div" id="left_content">
+
+            <aside>
+                <ul>
+                <li>feature 1</li>
+                <li>feature 2</li>
+                <li>feature 3</li>
+            </ul>
+            </aside>
+        </div>
+        <div class="flex_div" id="medium_content">
+            mid
+        </div>
+        <div class="flex_div" id="right_content">
+            right
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
